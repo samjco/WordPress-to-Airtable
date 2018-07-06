@@ -10,8 +10,7 @@ $settings           = array(
   'menu_slug'       => 'wp2air-settings',
   'ajax_save'       => false,
   'show_reset_all'  => false,
-  'show_all' => true,
-  'framework_title' => 'Form 2 Airtable <small>by Samjco</small>',
+  'framework_title' => 'Form 2 Airtable <small>by Sam Cohen</small>',
 );
 
 // ===============================================================================================
@@ -64,9 +63,6 @@ $pagelist = array();
     $pagelist[$page->post_title] = $page->post_title . " (".$page->ID.")";
 
   }
-//var_dump($page);
-// print_r($all_pages);
-//die();
 
 
 $field_id ="no id";
@@ -91,7 +87,6 @@ array(
   'desc'    => 'Enter your AirTable Key',
   'validate' => true,
   // 'help'    => 'Write something',
-  'default' => 'keymFTtatXs5X8DoA',
 ),    // end: a field
 array(
   'id'      => 'base_key', // another unique id
@@ -99,7 +94,6 @@ array(
   'title'   => 'Airtable Base Key',
   'desc'    => 'Enter your Base Key',
   // 'help'    => 'Write something',
-  'default' => 'app8xDuU5NS817XnM',
 ),    // end: a field
 array(
   'id'      => 'table_name', // another unique id
@@ -107,7 +101,6 @@ array(
   'title'   => 'Airtable Table Name',
   'desc'    => 'Enter the table name you are submitting to.',
   // 'help'    => 'Write something',
-  'default' => 'WP2AIRFORM',
 ),    // end: a field
 // array(
 //   'id'              => 'columns_names',
@@ -297,6 +290,3 @@ $options[]   = array(
 
 
 CSFramework::instance( $settings, $options );
-
-
-
